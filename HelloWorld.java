@@ -50,7 +50,10 @@ public class HelloWorld
       final String parte2 = "0ff85bd5dac9ecebbd9578";
       final String hash = ordenarData(parte1.substring(2, parte1.length())).concat(ordenarData(parte2.substring(2, parte2.length())));
       validIntegrityForData("alma", hash);
-     // System.out.println(p1.substring(2, p1.length()));
+      
+      final String p = "pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7q=0.0f00a5cb26a9d0083ae5f5";
+      
+      System.out.println(p.substring(p.indexOf("q=0.0f"), p.length()));
     } catch(Exception e) {
       System.out.println("ocorreu um problema: " + e);
   }
